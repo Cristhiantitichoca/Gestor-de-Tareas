@@ -1,5 +1,7 @@
 GESTOR DE TAREAS
+
 Paquetes
+
     * com.leo.asignador_de_tareas
          Clases y descripcion
          --Asignador_de_tareas: Clase principal para iniciar la aplicación.
