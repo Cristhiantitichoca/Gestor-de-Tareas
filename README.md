@@ -24,6 +24,7 @@ Paquetes
         void	                                  guardarTareasEnArchivo​(String archivo, List<Asignador_de_tareas.Tarea> tareas)	Guarda una lista de tareas en un archivo de texto.
         List<Asignador_de_tareas.Tarea>	          leerTareasDesdeArchivo​(String archivo)	                                        Lee una lista de tareas desde un archivo de texto.
          --Asignador_de_tareas.User: Clase que representa un usuario con su información básica.
+         
             Modifier and Type	                   Method	                                                            Description
         String	                                 getCorreo()	                                             Obtiene el correo electrónico del usuario.
         String	                                getUsuario()	                                             Obtiene el nombre del usuario.
@@ -31,18 +32,21 @@ Paquetes
             Modifier and Type	                   Method	                                                                                        Description
         static void	                      escribirUsuariosEnArchivo​(String archivo, List<Asignador_de_tareas.User> usuarios)	Escribe una lista de usuarios en un archivo de texto.
         List<Asignador_de_tareas.User>	      leerUsuariosDesdeArchivo​(String archivo)	                                                Lee una lista de usuarios desde un archivo de texto.
+
     * interfaz	 
         Clases y descripcion
         --editar_tarea: Clase que representa la interfaz gráfica para editar una tarea.
                 Constructor	                                                             Description
                editar_tarea()	                                                     Constructor predeterminado.
                editar_tarea​(Asignador_de_tareas.Tarea tareaSeleccionada)	     Constructor que recibe una tarea seleccionada.
+               
                Modifier and Type	Method	                                             Description
                 static void	         main​(String[] args)	                     Método principal para ejecutar la ventana de edición de tareas.
         --editar_user: Clase editar_user que representa una interfaz gráfica para editar los datos de un usuario.
                 Constructor	                                                                Description
                editar_user()	                                                                Constructor predeterminado que inicializa la interfaz gráfica.
                editar_user​(Asignador_de_tareas.User usuarioSeleccionado, lista_user lista)	Constructor que inicializa la ventana con un usuario seleccionado.
+
                Modifier and Type	                  Method	                        Description
                   static void	                   main​(String[] args)	                        Método principal para ejecutar la aplicación.
         --login: Clase para la ventana de inicio de sesión.
@@ -56,6 +60,7 @@ Paquetes
                   Modifier and Type	Method	                            Description
                      static void	main​(String[] args)	            Método principal para ejecutar la ventana de registro.
         --VENTANA_PRINCIPAL: Esta clase representa la ventana principal de la aplicación.
+        
     * ventanas
         Clases y descripcion
         --crear_tarea: Panel para la creación de tareas en la aplicación.
@@ -66,9 +71,11 @@ Paquetes
                 historial()	Crea una nueva instancia del panel historial.
                 Modifier and Type	Method	                   Description
                 void	            mostrarHistorial()	           Muestra el historial de tareas leyendo el contenido del archivo "tareas.txt".
+
         --inicio: Clase que representa el panel de inicio en la aplicación.
                 Constructor	Description
                    inicio()	Crea una nueva instancia del panel de inicio.
+
         --lista: Clase que representa una lista de tareas con funcionalidad de filtro, visualización y edición de tareas.
                 Constructor	 Description
                   lista()	 Constructor de la clase lista.
